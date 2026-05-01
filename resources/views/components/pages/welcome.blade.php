@@ -12,6 +12,7 @@ new class extends Component
 ?>
 
 <div class="flex flex-col h-auto">
-    <x-partials.welcome-text />
-    <x-svg.divider class="text-gray-100 " />
+    <x-elements.navbar-dekstop class=" w-full" />
+    <x-elements.welcome />
+    <x-elements.discover />
 </div>

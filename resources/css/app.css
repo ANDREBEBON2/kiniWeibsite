@@ -19,3 +19,13 @@
     --color-secondary-4: #3d2b2b;
     --color-accent: #f3c47f;
 }
+
+@layer components {
+    .content {
+        @apply container mx-auto px-10;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
