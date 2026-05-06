@@ -17,7 +17,8 @@ new class extends Component
         next() {
             this.active = (this.active + 1) % this.images.length;
         }
-    }" x-init="setInterval(() => next(), 5000)" class="relative min-h-screen w-full overflow-hidden bg-red-200">
+    }" x-init="setInterval(() => next(), 5000)"
+    class="relative min-h-dvh w-full overflow-hidden items-center justify-center flex flex-col" id="welcome">
 
     <!-- Background Images -->
     <template x-for="(img, index) in images" :key="index">
@@ -34,8 +35,8 @@ new class extends Component
     <!-- Konten (Harus Relative dan Z-Index lebih tinggi) -->
     <div class="relative z-20 container mx-auto px-4 pt-80 pb-40">
         <div class="flex flex-col text-white">
-            <h1 class="text-7xl font-bold mb-4">Expert Sumba <br>Travel Tips</h1>
-            <p class="max-w-2xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Expert Sumba <br>Travel Tips</h1>
+            <p class="max-w-2xl text-lg">
                 Discover comprehensive travel insights from local experts to make your Sumba Island journey
                 unforgettable and hassle-free.
             </p>

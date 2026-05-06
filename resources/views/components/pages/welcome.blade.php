@@ -15,4 +15,5 @@ new class extends Component
     <x-elements.navbar-dekstop class=" w-full" />
     <x-elements.welcome />
     <x-elements.discover />
+    <x-elements.bes-tips />
 </div>

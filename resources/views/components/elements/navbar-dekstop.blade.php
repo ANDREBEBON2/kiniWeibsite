@@ -9,16 +9,18 @@ new class extends Component
 ?>
 
 <div {{ $attributes->merge(['class' => 'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out h-20
-    flex items-center'])
+    flex items-center hidden lg:block '])
     }}
     x-data="{ scrolled: false }"
     x-init="window.pageYOffset > 80 ? scrolled = true : scrolled = false"
     @scroll.window="scrolled = (window.pageYOffset > 80)"
     :class="scrolled ? 'bg-secondary-4 shadow-md' : 'bg-transparent'"
     >
-    <div class="content flex items-center">
-        <div class="">
-            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-fit h-16" />
+    <div class="content flex items-center justify-center">
+
+        {{-- logo --}}
+        <div class="flex items-center justify-center">
+            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-fit h-16  mt-2" />
         </div>
 
         {{-- menu --}}
